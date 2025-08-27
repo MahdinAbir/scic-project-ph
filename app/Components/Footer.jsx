@@ -5,23 +5,23 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#EAEBD0] text-[#2f2f2f] py-10 border-t border-[#DA6C6C]">
+    <footer className="bg-[#ebd0dc] text-[#2f2f2f] py-10 border-t border-[#DA6C6C]">
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo & Description */}
         <div>
-          <h2 className="text-2xl font-bold mb-2 text-[#AF3E3E]">LifeDrop</h2>
+          <h2 className="text-2xl font-bold mb-2 text-[#520f0f]">Ever Cart</h2>
           <p className="text-sm max-w-xs">
-            Connecting lives through timely blood donation and compassion.
+            Everything you need, from beauty to home, all in one place.
           </p>
         </div>
 
         {/* Useful Links */}
         <div>
-          <h3 className="text-lg font-semibold mb-3 text-[#AF3E3E]">Useful Links</h3>
+          <h3 className="text-lg font-semibold mb-3 text-[#641616]">Useful Links</h3>
           <ul className="space-y-2 text-[#2f2f2f]">
             <li>
               <Link
-                href="/auth/terms"
+                href="/terms"
                 className="hover:text-[#DA6C6C] transition-colors duration-300"
               >
                 Terms & Conditions
@@ -29,7 +29,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="/auth/privacy"
+                href="/privacy"
                 className="hover:text-[#DA6C6C] transition-colors duration-300"
               >
                 Privacy Policy
@@ -83,7 +83,7 @@ const Footer = () => {
       </div>
 
       <div className="mt-10 text-center text-sm text-[#2f2f2f]">
-        &copy; {new Date().getFullYear()} Lifedrop. All rights reserved.
+        &copy; {new Date().getFullYear()} EverCart. All rights reserved.
       </div>
     </footer>
   );
