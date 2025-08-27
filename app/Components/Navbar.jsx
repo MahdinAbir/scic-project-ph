@@ -38,11 +38,13 @@ export default async function Navbar() {
                   </form>
                 </>
               ) : (
-                <form action={async () => { "use server"; await signIn("google") }}>
-                  <button className="rounded-xl bg-emerald-500/90 px-4 py-2 text-sm font-semibold hover:bg-emerald-500 active:scale-[.98] transition">
-                    Login
-                  </button>
-                </form>
+                <Link
+  href="/login"
+  className="rounded-xl bg-emerald-500/90 px-4 py-2 text-sm font-semibold hover:bg-emerald-500 active:scale-[.98] transition"
+>
+  Login
+</Link>
+
               )}
             </div>
 
