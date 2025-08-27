@@ -13,13 +13,13 @@ export default async function ProductDetails({ params }) {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <div className="flex flex-col md:flex-row gap-6">
+      <div className="flex flex-col md:flex-row gap-6 border-4 border-amber-950 bg-[#D6A99D] p-10 mx-6 my-10 ">
         {/* Thumbnail */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0  ">
           <img
             src={product.thumbnail}
             alt={product.title}
-            className="w-full md:w-64 h-64 object-cover rounded-md"
+            className=" w-64  object-cover rounded-md"
           />
         </div>
 
@@ -30,7 +30,7 @@ export default async function ProductDetails({ params }) {
           <p className="text-lg font-semibold mb-1">Price: ${product.price}</p>
           <p className="mb-1">Brand: {product.brand}</p>
           <p className="mb-1">Weight: {product.weight}g</p>
-          <p className="text-gray-500">Return Policy: {product.returnPolicy}</p>
+          <p className="text-gray-700">Return Policy: {product.returnPolicy}</p>
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ViewDetailsButton from "./ViewDetailsButton";
 
 export default function ProductHighlights() {
   const [products, setProducts] = useState([]);
@@ -59,12 +60,9 @@ export default function ProductHighlights() {
                   {product.title}
                 </h3>
                 <p className="text-pink-600 font-bold mb-4">${product.price}</p>
-                <Link
-                  href={`/products/${product.id}`}
-                  className="mt-auto px-4 py-2 bg-pink-400 hover:bg-pink-600 text-white font-semibold rounded-lg text-center transition"
-                >
-                  View Details
-                </Link>
+                <ViewDetailsButton id={product.id} >
+                
+                              </ViewDetailsButton>
               </div>
             </div>
           ))}
