@@ -6,9 +6,9 @@ export default async function LoginPage() {
   const session = await auth()
 
   // 🚀 If already logged in → redirect to home
-  if (session?.user) {
-    redirect("/")
-  }
+  // if (session?.user) {
+  //   redirect("/")
+  // }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 via-blue-600 to-violet-700">

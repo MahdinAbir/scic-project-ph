@@ -50,7 +50,7 @@ export default function ProductHighlights() {
                 <img
                   src={product.thumbnail}
                   alt={product.title}
-                  fill
+                  
                   className="object-cover"
                 />
               </div>
@@ -72,7 +72,7 @@ export default function ProductHighlights() {
 
         <div className="flex justify-center mt-12">
           <Link
-            href="/products"
+            href="/Products"
             className="px-6 py-3 bg-pink-200 hover:bg-pink-300 text-pink-900 font-semibold rounded-full shadow-lg transition"
           >
             View All Products
