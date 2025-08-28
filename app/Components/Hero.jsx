@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import bgimage from "@/public/8998057.jpg";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -25,15 +26,13 @@ export default function Hero() {
           Welcome to <span className="text-pink-400">Our Store</span>
         </h1>
         <p className="text-lg md:text-xl mb-8 drop-shadow-md text-pink-50">
-          Discover amazing products with style, comfort, and elegance.
+         
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-full shadow-lg transition">
+          <Link href={"/Products"} className="px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-full shadow-lg transition">
             Explore Products
-          </button>
-          <button className="px-6 py-3 bg-pink-200 hover:bg-pink-300 text-pink-900 font-semibold rounded-full shadow-lg transition">
-            Learn More
-          </button>
+          </Link>
+         
         </div>
       </div>
     </section>

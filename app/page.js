@@ -32,19 +32,16 @@ export default function Home() {
       </section>
 
       {/* About section (example, maybe part of Hero or another component) */}
-      <section id="about" class="scroll-mt-30" >
+      <section id="about" className="scroll-mt-30" >
         <BannerSlider />
       </section>
 
       {/* Products section */}
-      <section id="products" class="scroll-mt-10" >
+      <section id="products" className="scroll-mt-10" >
         <ProductHighlights />
       </section>
 
-      {/* Contact section placeholder */}
-      <section id="contact" className="min-h-[50vh] flex items-center justify-center bg-gray-100">
-        <h2 className="text-3xl font-bold">Contact Us</h2>
-      </section>
+     
     </div>
   );
 }
