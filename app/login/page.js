@@ -2,6 +2,7 @@ import { auth, signIn } from "@/auth"
 import { redirect } from "next/navigation"
 import Image from "next/image"
 
+
 export default async function LoginPage() {
   const session = await auth()
 
@@ -26,7 +27,7 @@ export default async function LoginPage() {
         {/* Google illustration */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/google-logo.png" // place in /public
+            src="/public/Google.jpg" // place in /public
             alt="Google"
             width={120}
             height={120}
@@ -44,7 +45,7 @@ export default async function LoginPage() {
             className="w-full flex items-center justify-center gap-3 rounded-xl bg-emerald-500 px-6 py-3 text-lg font-semibold text-white shadow-md hover:bg-emerald-600 active:scale-[.98] transition"
           >
             <Image
-              src="/google-icon.png" // place in /public
+              src="/public/Google.jpg" // place in /public
               alt="Google"
               width={24}
               height={24}

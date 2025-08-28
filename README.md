@@ -34,3 +34,31 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+# SciC-PH Evercart
+
+A full-stack **Next.js** project with **MongoDB** backend, featuring products management, user authentication (Google OAuth), and a dynamic client-side interface with pagination. This project can be extended for e-commerce, blood donation, or similar CRUD applications.
+
+---
+
+## Features
+
+- Next.js 13+ with App Router
+- MongoDB Atlas integration
+- Google OAuth authentication (Auth.js / NextAuth)
+- Product management: add, view, and paginate
+- Responsive UI with Tailwind CSS
+- Client-side fetching and server-side rendering for initial data
+- SweetAlert notifications for actions (optional)
+- Dynamic product detail pages
+
+---
+
+## Setup & Installation
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/your-repo.git
+cd your-repo
