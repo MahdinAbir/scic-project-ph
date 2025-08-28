@@ -1,25 +1,27 @@
 import Image from "next/image";
-
-async function getProduct(id) {
-  const res = await fetch(`https://dummyjson.com/products/${id}`, {
-    cache: "no-store",
-  });
-  return res.json();
-}
+import dbConnect from "@/lib/dbConnect";
+import { ObjectId } from "mongodb"; // Needed to query by MongoDB _id
 
 export default async function ProductDetails({ params }) {
   const { id } = params;
-  const product = await getProduct(id);
+
+  // Connect to MongoDB and get the product
+  const collection = await dbConnect("products");
+  const product = await collection.findOne({ _id: new ObjectId(id) });
+
+  if (!product) {
+    return <p className="text-center py-10">Product not found</p>;
+  }
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <div className="flex flex-col md:flex-row gap-6 border-4 border-amber-950 bg-[#D6A99D] p-10 mx-6 my-10 ">
+      <div className="flex flex-col md:flex-row gap-6 border-4 border-amber-950 bg-[#D6A99D] p-10 mx-6 my-10">
         {/* Thumbnail */}
-        <div className="flex-shrink-0  ">
+        <div className="flex-shrink-0">
           <img
             src={product.thumbnail}
             alt={product.title}
-            className=" w-64  object-cover rounded-md"
+            className="w-64 object-cover rounded-md"
           />
         </div>
 

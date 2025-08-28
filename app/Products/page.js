@@ -1,11 +1,7 @@
 import ProductsGrid from "./ProductGrid";
 
-
 async function getProducts(page = 1, limit = 12) {
-  const res = await fetch(
-    `https://dummyjson.com/products?limit=${limit}&skip=${(page - 1) * limit}`,
-    { cache: "no-store" }
-  );
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products?page=${page}&limit=${limit}`, { cache: "no-store" });
   return res.json();
 }
 

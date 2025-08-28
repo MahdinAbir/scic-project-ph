@@ -44,7 +44,7 @@ const BannerSlider = () => {
   };
 
   return (
-    <div id="" className="relative  mx-auto max-w-6xl w-full h-80 sm:h-96 md:h-[500px] overflow-hidden rounded-2xl shadow-lg my-6  ">
+    <div  className="relative   mx-auto max-w-6xl w-full h-80 sm:h-96 md:h-[500px] overflow-hidden rounded-2xl shadow-lg my-6  ">
       <AnimatePresence mode="wait">
         {slides.map(
           (slide, index) =>

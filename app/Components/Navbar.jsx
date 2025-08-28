@@ -26,6 +26,13 @@ export default function Navbar({ user }) {
               <NavLink section="about" router={router} pathname={pathname}>About</NavLink>
               <NavLink section="products" router={router} pathname={pathname}>Products</NavLink>
               <NavLink section="contact" router={router} pathname={pathname}>Contact</NavLink>
+              {user && (
+    <Link href="/addApp" className="relative font-medium group">
+      <span className="hover:opacity-90 transition">Add Product</span>
+      <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-white/80 scale-x-0 group-hover:scale-x-100 origin-left transition-transform" />
+    </Link>
+  )}
+              
             </div>
 
             {/* Right (desktop) */}

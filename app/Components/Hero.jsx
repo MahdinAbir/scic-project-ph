@@ -5,7 +5,7 @@ import bgimage from "@/public/8998057.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full flex items-center justify-center text-center">
+    <section className="relative h-screen w-full flex items-center justify-center  text-center">
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image

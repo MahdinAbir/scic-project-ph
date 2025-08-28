@@ -32,12 +32,12 @@ export default function Home() {
       </section>
 
       {/* About section (example, maybe part of Hero or another component) */}
-      <section id="about">
+      <section id="about" class="scroll-mt-30" >
         <BannerSlider />
       </section>
 
       {/* Products section */}
-      <section id="products">
+      <section id="products" class="scroll-mt-10" >
         <ProductHighlights />
       </section>
 
